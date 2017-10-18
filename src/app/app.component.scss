@@ -1,5 +1,7 @@
+@import "../assets/scss/cores";
+
 nav {
-  background-color: #44f;
+  background-color: $azul;
   padding: 10px 25px;
   display: flex;
   justify-content: flex-end;
