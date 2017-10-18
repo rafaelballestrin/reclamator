@@ -1,0 +1,11 @@
+nav {
+  background-color: #44f;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+span {
+  font-size: 24px;
+  color: white;
+}
