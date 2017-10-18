@@ -3,10 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-lista',
   templateUrl: './lista.component.html',
-  styleUrls: ['./lista.component.css']
+  styleUrls: ['lista.component.scss']
 })
 export class ListaComponent {
-  valor = 0;
   tarefas = [
     {
       titulo: 'Comprar uma Harley',
@@ -21,9 +20,5 @@ export class ListaComponent {
       feita: false
     }
   ];
-
-  incrementar(){
-    this.valor++;
-  }
 
 }
