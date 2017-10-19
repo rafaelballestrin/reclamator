@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {TarefasService} from "../tarefas.service";
 
 @Component({
   selector: 'app-rodape',
@@ -6,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./rodape.component.scss']
 })
 export class RodapeComponent implements OnInit {
+  estatisticas;
 
-  constructor() { }
+  constructor(tarefasService: TarefasService) {
+    this.estatisticas = tarefasService.estatisticas;
+
+  }
 
   ngOnInit() {
   }

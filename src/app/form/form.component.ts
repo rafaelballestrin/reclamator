@@ -11,15 +11,12 @@ export class FormComponent {
 
 
 
-  constructor(refTarefas: TarefasService) {
+  constructor(private refTarefas: TarefasService) {
     this.tarefasNoForm = refTarefas.tarefas;
   }
 
   inserir(input: HTMLInputElement){
-    this.tarefasNoForm.push({
-      titulo: input.value,
-      feita: false
-    });
+    this.refTarefas.inserirTarefa(input.value);
 
     input.value = '';
     console.log(this.tarefasNoForm);
