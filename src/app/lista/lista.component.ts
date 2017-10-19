@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 import {TarefasService} from "../tarefas.service";
 
 @Component({
@@ -9,10 +9,13 @@ import {TarefasService} from "../tarefas.service";
 export class ListaComponent {
   tarefasNaLista;
 
-
-
-  constructor(refServico: TarefasService){
+  constructor(refServico: TarefasService) {
     this.tarefasNaLista = refServico.tarefas;
+  }
+
+  fazer(tarefa){
+    tarefa.feita = true;
+    console.log(this.tarefasNaLista)
   }
 
 }

@@ -1,3 +1,7 @@
 <ul>
-  <li *ngFor="let tarefa of tarefasNaLista">{{tarefa.titulo}}</li>
+  <li *ngFor="let tarefa of tarefasNaLista"
+      (click)="fazer(tarefa)"
+      [ngClass]="{'riscado': tarefa.feita}">
+    {{tarefa.titulo}}
+  </li>
 </ul>
