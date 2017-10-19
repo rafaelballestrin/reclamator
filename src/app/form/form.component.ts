@@ -1,4 +1,5 @@
 import {Component} from '@angular/core';
+import {TarefasService} from "../tarefas.service";
 
 @Component({
   selector: 'app-form',
@@ -6,19 +7,22 @@ import {Component} from '@angular/core';
   styleUrls: ['./form.component.scss']
 })
 export class FormComponent {
-  tarefas = [];
+  tarefasNoForm;
 
-  constructor() {
+
+
+  constructor(refTarefas: TarefasService) {
+    this.tarefasNoForm = refTarefas.tarefas;
   }
 
   inserir(input: HTMLInputElement){
-    this.tarefas.push({
+    this.tarefasNoForm.push({
       titulo: input.value,
       feita: false
     });
 
     input.value = '';
-    console.log(this.tarefas);
+    console.log(this.tarefasNoForm);
   }
 
 }

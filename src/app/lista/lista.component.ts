@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {TarefasService} from "../tarefas.service";
 
 @Component({
   selector: 'app-lista',
@@ -6,19 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['lista.component.scss']
 })
 export class ListaComponent {
-  tarefas = [
-    {
-      titulo: 'Comprar uma Harley',
-      feita: false
-    },
-    {
-      titulo: 'Apagar o Atom do computador',
-      feita: false
-    },
-    {
-      titulo: 'Apagar o React do computador',
-      feita: false
-    }
-  ];
+  tarefasNaLista;
+
+
+
+  constructor(refServico: TarefasService){
+    this.tarefasNaLista = refServico.tarefas;
+  }
 
 }
