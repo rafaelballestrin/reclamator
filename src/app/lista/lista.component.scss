@@ -1,7 +1,10 @@
 :host {
-  padding: 0px 10%;
-  display: block;
+  padding-bottom: 120px;
+  display: flex;
   font-size: 24px;
+  // background-image: url('http://creativecan.com/wp-content/uploads/2012/10/minimalism_texture_paper_list_line.jpg');
+  background-image: url('https://static.vecteezy.com/system/resources/previews/000/094/103/non_2x/free-squared-paper-vector.jpg');
+  font-family: 'Slabo 27px', serif;
 }
 
 li{
@@ -11,4 +14,3 @@ li{
 .riscado{
   text-decoration: line-through;
 }
-

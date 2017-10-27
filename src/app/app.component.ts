@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent {
-  nome = 'João da silva';
+  nome = 'reclamão';
 
   constructor(){
     console.log(this.nome);

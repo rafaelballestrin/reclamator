@@ -1,13 +1,14 @@
 @import "../assets/scss/cores";
 
 nav {
-  background-color: $azul;
+  background-color: $verde;
   padding: 10px 25px;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+
 }
 
 span {
-  font-size: 24px;
+  font-size: 30px;
   color: white;
 }

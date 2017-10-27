@@ -1,25 +1,29 @@
 @import "../../assets/scss/cores";
 
 :host {
-  padding: 20px 10% 0;
+  padding: 20px 10% 20px;
   display: block;
-  font-size: 24px;
+  font-size: 20px;
   display: flex;
   justify-content: space-between;
+  background-color: #f9ff00;
+  font-family: 'Slabo 27px', serif;
 }
 
 input {
-  font-size: 32px;
+  font-size: 28px;
   height: 40px;
   width: 80%;
-  border: 1px solid $cinza-claro;
+  border: 0;
   border-radius: 5px;
+
 }
 
 button {
+  font-size: 20px;
   width: 15%;
   height: 44px;
-  background-color: $azul;
+  background-color: #006cba;
   border: 0;
   color: white;
   border-radius: 5px;
